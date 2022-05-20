@@ -43,13 +43,13 @@ function draw() {
     check_sketch();
     if (drawn_sketch = sketch) {
         answer_holder = "set";
-        score = score + 1;
+        score = score++;
         document.getElementById('score').innerHTML = score;
     }
 }
 
 function check_sketch() {
-    timer_counter = timer_counter + 1;
+    timer_counter = timer_counter++;
     document.getElementById('timer').innerHTML = timer_check + timer_counter;
     console.log(timer_counter);
     if (timer_counter>400) {
